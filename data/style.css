@@ -1,0 +1,105 @@
+body {
+  font: 10pt Helvetica, Verdana, sans-serif;
+  line-height: 1.333em;
+}
+
+.hfeed {
+  margin: 0.33em;
+  width: 45em;
+  position: relative;
+}
+
+  h1, h2 {
+    font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 1.41em;
+    width: 66%;
+  }
+  h2 { font-size: 1.2em; }
+  h3,h4,h5,h6 { font-size: 1em; }
+
+.entry-content {
+  margin-top: 2.5em;
+}
+
+  .entry-content code {
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 0.9em;
+  }
+
+  .entry-content blockquote {
+    font-style: italic;
+    margin: 0 1em;
+  }
+
+  .entry-content ul {
+    list-style-type: none;
+    padding: 0 0 0 2em;
+  }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+address {
+  font-style: normal;
+}
+
+.footer, #recent {
+  margin-top: 2.5em;
+}
+
+  #recent ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0 0 0 1em;
+  }
+
+  #recent li + li:before {
+    content: "\2044";
+    padding: 0 0.8em 0 0.5em;
+  }
+
+  #recent li {
+    display: inline;
+  }
+
+#search {
+  text-align: right;
+  height: 0;
+  position: absolute;
+  top: 0.3em;
+  right: 0;
+}
+
+input {
+  font: bold 12px Helvetica, Verdana, sans-serif;
+  font-weight: bold;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 2px;
+}
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+}
+
+form a {
+  padding-right: 0.33em;
+}
+
+abbr {
+  border-bottom: 1px dotted black;
+}

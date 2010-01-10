@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">vuxu.org</title>
+  <link rel="alternate" type="text/html"
+	href="http://vuxu.org/" />
+  <link rel="self" href="http://vuxu.org/index.atom" />
+  <author>
+    <name>Christian Neukirchen</name>
+    <uri>http://chneukirchen.org/</uri>
+    <email>chneukirchen@gmail.com</email>
+  </author>
+  <id>tag:vuxu.org,2010:vuxu-feed</id>
+  <generator version="1.0">vuxi.rb</generator>
+  <rights type="xhtml">
+  <div xmlns="http://www.w3.org/1999/xhtml">
+Copyright © 2007–2010 Christian Neukirchen, chneukirchen@gmail.com
+Verbatim copying is permitted as long as this message is preserved.
+  </div>
+  </rights>
+  <updated>${self[:time].iso8601}</updated>
+$ self[:entries].each { |entry|
+  <entry>
+    <title>${entry[:title]}</title>
+    <author>
+      <name>Christian Neukirchen</name>
+      <uri>http://chneukirchen.org/</uri>
+      <email>chneukirchen@gmail.com</email>
+    </author>
+    <link rel="alternate" type="text/html"
+	  href="http://vuxu.org/${entry[:id]}" />
+    <id>tag:vuxu.org,2010:vuxu-${entry[:id]}</id>
+    <updated>${entry[:updated].iso8601}</updated>
+    <published>${entry[:date].iso8601}</published>
+    <content type="html">
+${format(entry)}
+    </content>
+  </entry>
+$ }
+</feed>

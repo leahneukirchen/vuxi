@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>vuxu.org: ${self[:title]}</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://vuxu.org/index.atom">
+  </head>
+  <body>
+
+<div class="hfeed">
+<div class="hentry">
+<h1 class="entry-title">
+  <a href="/">vuxu.org</a>:
+  <abbr class="published" title="${self[:date].iso8601}">
+    <a href="${self[:id]}" rel="bookmark">${self[:title]}</a>
+  </abbr>
+</h1>
+
+<form method="get" action="http://www.google.com/search" id="search">
+  <a href="/">home</a>
+  <a href="all">all</a>
+  <input type="hidden" name="sitesearch" value="vuxu.org">
+  <input type="text" name="q" size="16" maxlength="255" value="">
+  <input type="submit" value="search">
+</form>
+
+$ if self[:recent]
+<div id="recent">
+Last changed:
+<ul >
+$ self[:recent].each { |e|
+  <li><a href="${e[:id]}">${e[:title]}</a></li>
+$ }
+</ul>
+</div>
+$ end
+
+<div class="entry-content">
+$:{format self}
+</div>
+</div>
+
+<div class="footer">
+<div>Created: ${self[:date].rfc2822}</div>
+<div>Updated: ${self[:updated].rfc2822}</div>
+<address class="author vcard">
+Copyright &#169; 2007&#8211;2010 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>.
+</address>
+</div>
+</div>
+</body>
+</html>
+

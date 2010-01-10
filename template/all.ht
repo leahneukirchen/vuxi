@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>vuxu.org: All pages</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://vuxu.org/index.atom">
+  </head>
+  <body>
+
+<div class="hfeed">
+<div class="hentry">
+<h1 class="entry-title">
+  <a href="/">vuxu.org</a>:
+  <a href="all" rel="bookmark">All pages</a>
+</h1>
+
+<form method="get" action="http://www.google.com/search" id="search">
+  <a href="/">home</a>
+  <a href="all">all</a>
+  <input type="hidden" name="sitesearch" value="vuxu.org">
+  <input type="text" name="q" size="16" maxlength="255" value="">
+  <input type="submit" value="search">
+</form>
+
+<div class="entry-content">
+All pages:
+<ul>
+$ sort_by { |e| e[:title].downcase }.each { |e|
+  <li><a href="${e[:id]}">${e[:title]}</a> [${e[:id]}]</li>
+$ }
+</ul>
+</div>
+</div>
+
+<div class="footer">
+<address class="author vcard">
+Copyright &#169; 2007&#8211;2010 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>.
+</address>
+</div>
+</div>
+</body>
+</html>

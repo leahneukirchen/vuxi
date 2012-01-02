@@ -951,7 +951,7 @@ class BlueCloth < String
 			)?				# title is optional
 		  \)
 		)
-	  }xs #"
+	  }x #"
 
 
 	# Reference-style images
@@ -962,7 +962,7 @@ class BlueCloth < String
 			(?:\n[ ]*)?		# One optional newline + spaces
 			\[ (.*?) \]		# id = $3
 		)
-	  }xs
+	  }x
 
 	### Turn image markup into image tags.
 	def transform_images( str, rs )

@@ -51,7 +51,7 @@ def template(template, data)
   HTemplate.new(File.read(template), template).expand(data)
 end
 
-recent = ENTRIES.first(10)
+recent = ENTRIES.first(30)
 
 Entry["index"][:recent] = recent
 

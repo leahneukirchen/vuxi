@@ -5,7 +5,7 @@
 	href="http://vuxu.org/" />
   <link rel="self" href="http://vuxu.org/index.atom" />
   <author>
-    <name>Christian Neukirchen</name>
+    <name>Leah Neukirchen</name>
     <uri>http://chneukirchen.org/</uri>
     <email>chneukirchen@gmail.com</email>
   </author>
@@ -13,7 +13,7 @@
   <generator version="1.0">vuxi.rb</generator>
   <rights type="xhtml">
   <div xmlns="http://www.w3.org/1999/xhtml">
-Copyright © 2007–2012 Christian Neukirchen, chneukirchen@gmail.com
+Copyright © 2007–2017 Leah Neukirchen, chneukirchen@gmail.com
 Verbatim copying is permitted as long as this message is preserved.
   </div>
   </rights>
@@ -22,7 +22,7 @@ $ self[:entries].each { |entry|
   <entry>
     <title>${entry[:title]}</title>
     <author>
-      <name>Christian Neukirchen</name>
+      <name>Leah Neukirchen</name>
       <uri>http://chneukirchen.org/</uri>
       <email>chneukirchen@gmail.com</email>
     </author>

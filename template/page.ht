@@ -46,7 +46,7 @@ $:{format self}
 <div>Created: ${self[:date].rfc2822}</div>
 <div>Updated: ${self[:updated].rfc2822}</div>
 <address class="author vcard">
-Copyright &#169; 2007&#8211;2012 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>.
+Copyright &#169; 2007&#8211;2017 <a class="email fn" href="mailto:chneukirchen@gmail.com">Leah Neukirchen</a>.
 </address>
 </div>
 </div>

@@ -7,13 +7,13 @@
   <author>
     <name>Leah Neukirchen</name>
     <uri>http://chneukirchen.org/</uri>
-    <email>chneukirchen@gmail.com</email>
+    <email>leah@vuxu.org</email>
   </author>
   <id>tag:vuxu.org,2010:vuxu-feed</id>
   <generator version="1.0">vuxi.rb</generator>
   <rights type="xhtml">
   <div xmlns="http://www.w3.org/1999/xhtml">
-Copyright © 2007–2017 Leah Neukirchen, chneukirchen@gmail.com
+Copyright © 2007–2018 Leah Neukirchen, leah@vuxu.org
 Verbatim copying is permitted as long as this message is preserved.
   </div>
   </rights>
@@ -24,7 +24,7 @@ $ self[:entries].each { |entry|
     <author>
       <name>Leah Neukirchen</name>
       <uri>http://chneukirchen.org/</uri>
-      <email>chneukirchen@gmail.com</email>
+      <email>leah@vuxu.org</email>
     </author>
     <link rel="alternate" type="text/html"
 	  href="http://vuxu.org/${entry[:id]}" />

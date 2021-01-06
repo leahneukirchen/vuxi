@@ -5,7 +5,7 @@
     <title>vuxu.org: ${self[:title]}</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://vuxu.org/index.atom">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="https://vuxu.org/index.atom">
   </head>
   <body>
 
@@ -18,7 +18,7 @@
   </abbr>
 </h1>
 
-<form method="get" action="http://www.google.com/search" id="search">
+<form method="get" action="https://www.google.com/search" id="search">
   <a href="/">home</a>
   <a href="all">all</a>
   <input type="hidden" name="sitesearch" value="vuxu.org">
@@ -46,7 +46,7 @@ $:{format self}
 <div>Created: ${self[:date].rfc2822}</div>
 <div>Updated: ${self[:updated].rfc2822}</div>
 <address class="author vcard">
-Copyright &#169; 2007&#8211;2018 <a class="email fn" href="mailto:leah@vuxu.org">Leah Neukirchen</a>.
+Copyright &#169; 2007&#8211;2021 <a class="email fn" href="mailto:leah@vuxu.org">Leah Neukirchen</a>.
 </address>
 </div>
 </div>

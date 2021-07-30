@@ -1,12 +1,12 @@
 # = Vuxi -- a minimalist static Wiki compiler
 #
-# Copyright (C) 2010 Christian Neukirchen <purl.org/net/chneukirchen>
+# Copyright (C) 2010, 2021 Leah Neukirchen <leah@vuxu.org>
 # Licensed under the terms of the MIT license.
 
 require 'time'
 $: << "vendor"
 require 'bluecloth'; require 'rubypants'; require 'htemplate'
-BlueCloth::EmptyElementSuffix.replace(">")
+BlueCloth::EMPTY_ELEMENT_SUFFIX.replace(">")
 
 Dir.mkdir("html")  rescue true
 
